@@ -1,0 +1,9 @@
+{{extend 'layout.html'}}
+{{for i in c:}}
+{{=i.comment.comment_body}} <br/>
+By : &nbsp;
+ {{=i.auth_user.first_name}}
+<br/><br/>
+{{pass}}
+<br/><br/>
+{{=A(T("Post Comment"),_href=URL('post_comment',args=no))}}

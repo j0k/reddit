@@ -1,0 +1,7 @@
+{{extend 'layout.html'}}
+{{for i in c:}}
+{{=A(T(i.category),_href=URL('view_post',args=i.id))}}
+<br/>
+{{pass}}
+<br/><br/>
+{{=A('post_feed',_href=URL('post_feed'))}}

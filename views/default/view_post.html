@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+{{for i in p:}}
+{{=A(T(i.heading),_href=i.url)}}
+{{=A(T("Comments"),_href=URL('view_comment',args=i.id))}}
+<br/>
+{{pass}}

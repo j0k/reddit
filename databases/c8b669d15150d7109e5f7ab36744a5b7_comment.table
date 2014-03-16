@@ -1,0 +1,63 @@
+(dp1
+S'comment'
+p2
+(dp3
+S'type'
+p4
+S'text'
+p5
+sS'sortable'
+p6
+I2
+sS'sql'
+p7
+S'TEXT'
+p8
+ssS'comment_body'
+p9
+(dp10
+S'type'
+p11
+S'text'
+p12
+sS'sortable'
+p13
+I2
+sS'sql'
+p14
+S'TEXT'
+p15
+ssS'pid'
+p16
+(dp17
+g11
+S'reference post'
+p18
+sg13
+I4
+sg14
+S'INTEGER REFERENCES post(id) ON DELETE CASCADE'
+p19
+ssS'id'
+p20
+(dp21
+g11
+S'id'
+p22
+sg13
+I1
+sg14
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p23
+ssS'author'
+p24
+(dp25
+g11
+S'reference auth_user'
+p26
+sg13
+I3
+sg14
+S'INTEGER REFERENCES auth_user(id) ON DELETE CASCADE'
+p27
+ss.
